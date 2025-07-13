@@ -3,5 +3,5 @@ A show that plays media from folder and htm clocks, media shuffles for 5 minutes
 
 install with 
 
-sudo bash <(curl -s https://raw.githubusercontent.com/YOUR_USERNAME/showtime-installer/main/install.sh)
+sudo bash <(curl -s https://raw.githubusercontent.com/asifrao25/showtime-installer/main/install.sh)
 
