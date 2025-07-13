@@ -1,0 +1,20 @@
+[Unit]
+Description=Showtime Scheduler Service
+After=graphical.target
+After=showtime-server.service
+After=network.target
+Requires=showtime-server.service
+Wants=graphical.target
+
+[Service]
+Type=simple
+User=root
+Group=root
+Environment=DISPLAY=:0
+Environment=XAUTHORITY=/root/.Xauthority
+ExecStart=/usr/local/bin/showtime-scheduler
+Restart=always
+RestartSec=30
+
+[Install]
+WantedBy=graphical.target
